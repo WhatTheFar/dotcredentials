@@ -1,0 +1,4 @@
+.gitattributes !filter !diff
+.aws/** filter=git-crypt diff=git-crypt
+.ssh/** filter=git-crypt diff=git-crypt
+github.md filter=git-crypt diff=git-crypt
