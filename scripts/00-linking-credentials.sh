@@ -14,6 +14,6 @@ find . -path "./.ssh/*" -not -name "config" -not -name "known_host*" -not -name 
 
 echo -e "$BLUE--- Linking .aws ---$RESET"
 
-mkdir "$HOME/.aws"
+mkdir -p "$HOME/.aws"
 ln -sf "$(pwd)/.aws/config" "$HOME/.aws/config"
 ln -sf "$(pwd)/.aws/credentials" "$HOME/.aws/credentials"
